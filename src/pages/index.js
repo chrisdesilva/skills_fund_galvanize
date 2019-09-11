@@ -9,7 +9,8 @@ ReactGA.initialize(GATracking, {
   debug: false,
   titleCase: false,
   gaOptions: {
-    siteSpeedSampleRate: 100
+    siteSpeedSampleRate: 100,
+    cookieDomain: 'auto'
   }
 })
 

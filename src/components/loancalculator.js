@@ -30,6 +30,14 @@ const LoanCalculator = () => {
  const selectProgram = e => {
     let program = e.target.value
     setProgramIndex(program) // sets index for programLoanInfo object in programInfo.js
+    switch(program){
+        case "2":
+            setMetroIndex('0')
+            break;
+        case "3":
+            setMetroIndex('0')
+            break;
+    }
 }
 
 useEffect(() => { // watches for updates to the programIndex, updates dropdown/loan info accordingly
@@ -38,7 +46,7 @@ useEffect(() => { // watches for updates to the programIndex, updates dropdown/l
     setMetros(programLoanInfo[programIndex]['locations'])
     showMetros(programLoanInfo[programIndex]['showMetros'])
     showLoanTypes(programLoanInfo[programIndex]['showLoanTypes'])
-}, [programIndex])
+}, [metroIndex, programIndex])
 
 const selectMetro = e => {
     let metro = e.target.value
@@ -47,7 +55,7 @@ const selectMetro = e => {
 
 useEffect(() => { // watches for changes to metroIndex, updates dropdown/loan info accordingly
     setLoanInformation(programLoanInfo[programIndex]['metros'][metroIndex]['loanInfo'])
-}, [metroIndex])
+}, [metroIndex, programIndex])
 
 
 const updateLoanAmount = e => {

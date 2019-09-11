@@ -29,7 +29,7 @@ const FAQ = () => {
                <ul className="mb-0 pb-4">
                     {faq.loanRange.map(program => {
                          return <li>
-                              <strong>For {program.programName},</strong> you may borrow from $2,000 up to {program.maxAmount} for tuition. {program.col ? <span>You may also borrow up to {program.colAmount} for cost of living.</span> : <span>Cost of living is not available for this program.</span>}
+                              <strong>For {program.programName},</strong> you may borrow from $2,000 up to {program.maxAmount} for tuition. {program.col ? <span>You may also borrow up to {program.colAmount} for cost of living, depending on your metro. See table above the loan calculator for a breakdown by location.</span> : <span>Cost of living is not available for this program.</span>}
                          </li>
                     })}
                </ul>

@@ -29,7 +29,10 @@ module.exports = {
       options: {
         trackingIds: [
           "UA-68312423-1"
-        ]
+        ],
+        gtagConfig: {
+          cookie_domain: "auto"
+        }
       }
     },
     {

@@ -5,3 +5,11 @@
 [[redirects]]
   from = "/accepted"
   to = "/"
+
+[[redirects]]
+  from = "/data-science-accepted"
+  to = "/"
+
+[[redirects]]
+  from = "/web-development-accepted"
+  to = "/"
