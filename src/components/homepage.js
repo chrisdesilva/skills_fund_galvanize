@@ -1,7 +1,9 @@
 import React from 'react'
-import ReactGA from 'react-ga'
+// import ReactGA from 'react-ga'
+import { UnmountClosed as Collapse } from 'react-collapse'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Popup from '../components/popup'
 import Banner from '../components/banner'
 import LeadContent from '../components/leadcontent'
 import ThreeSteps from '../components/threesteps'
@@ -9,13 +11,14 @@ import LoanCalculator from '../components/loancalculator'
 import InfoButtonContainer from '../components/infobuttoncontainer'
 import LoanApp from './loanapp'
 import Reviews from './reviews'
+import DisabledApplication from './disabledApplication'
 import LeadCaptureForm from './leadcaptureform'
 import ApplyFooter from './applyFooter'
-import { UnmountClosed as Collapse } from 'react-collapse'
 import TermInfo from './terminfo'
 import FAQ from './faq'
 import Eligibility from './eligibility'
 import ContactForm from './contactform'
+import { applicationsLive, schoolName } from '../constants/programInfo'
 
 
 class Homepage extends React.Component {
@@ -25,7 +28,8 @@ class Homepage extends React.Component {
           termInfo: false,
           faq: false,
           eligibility: false,
-          contact: false
+          contact: false,
+          popup: true
         }
         this.threesteps = React.createRef();
         this.apply = React.createRef();
@@ -34,28 +38,26 @@ class Homepage extends React.Component {
       scrollToApply = () => {
         this.apply.current.scrollIntoView({ behavior: 'smooth' });
         // ReactGA.event({
-        //   category: 'Apply Now Button | Galvanize',
+        //   category: `Apply Now Button | ${schoolName}`,
         //   action: 'click',
         //   label: 'banner'
         // })
       }
 
-      scrollToApply2 = () => {
-        this.apply.current.scrollIntoView({ behavior: 'smooth' });
-        // ReactGA.event({
-        //   category: 'Apply Now Button | Galvanize',
-        //   action: 'click',
-        //   label: 'getting started'
-        // })
+      trackPopup = () => {
+        ReactGA.event({
+          category: `Student Lead Capture | ${this.props.schoolName}`,
+          action: 'click',
+          label: 'popup'
+        })
       }
 
-      scrollToApply3 = () => {
-        this.apply.current.scrollIntoView({ behavior: 'smooth' });
-        // ReactGA.event({
-        //   category: 'Apply Now Button | Galvanize',
-        //   action: 'click',
-        //   label: 'footer'
-        // })
+      trackStatic = () => {
+        ReactGA.event({
+          category: `Student Lead Capture | ${this.props.schoolName}`,
+          action: 'click',
+          label: 'static'
+        })
       }
     
       activateMoreInfo = () => {
@@ -98,6 +100,14 @@ class Homepage extends React.Component {
         return (
           <Layout>
             <SEO title={this.props.schoolName} />
+            {this.state.popup &&
+              <Popup 
+                IP={this.props.IP}
+                pageUri={this.props.pageUri}
+                schoolName={this.props.schoolName}
+                trackGA={this.trackPopup}
+              />
+            }
             <Banner 
                 howItWorksOnClick={this.scrollToContent}  
                 applyNowOnClick={this.scrollToApply}  
@@ -122,6 +132,7 @@ class Homepage extends React.Component {
               IP={this.props.IP}
               pageUri={this.props.pageUri}
               schoolName={this.props.schoolName}
+              trackGA={this.trackStatic}
             />
             <InfoButtonContainer 
               terms={this.activateMoreInfo}
