@@ -143,7 +143,7 @@ export const moreThanSixPrograms = false // set to true if there are 7 or more p
 export const programLoanInfo = [ // update with program names and corresponding loan URLs with market segment code from Master Loan Parameters
     {
         name: "Software Engineering Immersive",
-        url: "https://sf.privateloan.studentloan.org/external/LoanApplication.do?lenderCode=SKGWD18",
+        url: "https://my.skills.fund/application?lenderCode=SKGWD18",
         loanInfo: { // match loanInfo in first metro below
             maxLoanAmt: 28500,
             loanTerm36: true,
@@ -276,7 +276,7 @@ export const programLoanInfo = [ // update with program names and corresponding 
     },
     {
         name: "Data Science Immersive",
-        url: "https://sf.privateloan.studentloan.org/external/LoanApplication.do?lenderCode=SKGDS18",
+        url: "https://my.skills.fund/application?lenderCode=SKGDS18",
         loanInfo: { // match loanInfo in first metro below
             maxLoanAmt: 20480,
             loanTerm36: true,
@@ -409,7 +409,7 @@ export const programLoanInfo = [ // update with program names and corresponding 
     },
     {
         name: "Remote Software Engineering Immersive",
-        url: "https://sf.privateloan.studentloan.org/external/LoanApplication.do?lenderCode=SKGALRE19",
+        url: "https://my.skills.fund/application?lenderCode=SKGALRE19",
         loanInfo: { // match loanInfo in first metro below
             maxLoanAmt: 23480,
             loanTerm36: true,
@@ -478,7 +478,7 @@ export const programLoanInfo = [ // update with program names and corresponding 
     },
     {
         name: "Remote Data Science Immersive",
-        url: "https://sf.privateloan.studentloan.org/external/LoanApplication.do?lenderCode=SKGALRE19",
+        url: "https://my.skills.fund/application?lenderCode=SKGALRE19",
         loanInfo: { // match loanInfo in first metro below
             maxLoanAmt: 15980,
             loanTerm36: true,
