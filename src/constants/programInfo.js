@@ -72,13 +72,13 @@ export const faq = {
       programName: "Galvanize's Software Engineering Immersive",
       maxAmount: "$15,980",
       col: true,
-      colAmount: "$9,000",
+      colAmount: "$12,000",
     },
     {
       programName: "Galvanize's Data Science Immersive",
       maxAmount: "$15,980",
       col: true,
-      colAmount: "$4,500",
+      colAmount: "$12,000",
     },
     {
       programName: "Galvanize's Remote Data Science",
@@ -164,7 +164,6 @@ export const programLoanInfo = [
     locations: [
       "Austin",
       "Boulder",
-      "Golden Triangle",
       "Los Angeles",
       "New York",
       "Phoenix",
@@ -191,20 +190,6 @@ export const programLoanInfo = [
       },
       {
         location: "Boulder",
-        loanInfo: {
-          maxLoanAmt: 24980,
-          loanTerm36: true,
-          loanTerm60: true,
-          "0": {
-            k: 7,
-            apr36: 11.16,
-            apr60: 12.51,
-          },
-          "1": null,
-        },
-      },
-      {
-        location: "Golden Triangle",
         loanInfo: {
           maxLoanAmt: 24980,
           loanTerm36: true,
@@ -308,7 +293,7 @@ export const programLoanInfo = [
     url: "https://my.skills.fund/application?lenderCode=SKGDS18",
     loanInfo: {
       // match loanInfo in first metro below
-      maxLoanAmt: 20480,
+      maxLoanAmt: 24980,
       loanTerm36: true,
       loanTerm60: true,
       "0": {
@@ -324,7 +309,6 @@ export const programLoanInfo = [
     locations: [
       "Austin",
       "Boulder",
-      "Golden Triangle",
       "Los Angeles",
       "New York",
       "Phoenix",
@@ -337,7 +321,7 @@ export const programLoanInfo = [
         location: "Austin",
         loanInfo: {
           // match loanInfo to Program 2 loanInfo above
-          maxLoanAmt: 20480,
+          maxLoanAmt: 24980,
           loanTerm36: true,
           loanTerm60: true,
           "0": {
@@ -351,21 +335,7 @@ export const programLoanInfo = [
       {
         location: "Boulder",
         loanInfo: {
-          maxLoanAmt: 20480,
-          loanTerm36: true,
-          loanTerm60: true,
-          "0": {
-            k: 5,
-            apr36: 11.16,
-            apr60: 12.51,
-          },
-          "1": null,
-        },
-      },
-      {
-        location: "Golden Triangle",
-        loanInfo: {
-          maxLoanAmt: 20480,
+          maxLoanAmt: 24980,
           loanTerm36: true,
           loanTerm60: true,
           "0": {
@@ -379,7 +349,7 @@ export const programLoanInfo = [
       {
         location: "Los Angeles",
         loanInfo: {
-          maxLoanAmt: 20480,
+          maxLoanAmt: 24980,
           loanTerm36: true,
           loanTerm60: true,
           "0": {
@@ -393,7 +363,7 @@ export const programLoanInfo = [
       {
         location: "New York",
         loanInfo: {
-          maxLoanAmt: 21980,
+          maxLoanAmt: 27980,
           loanTerm36: true,
           loanTerm60: true,
           "0": {
@@ -407,7 +377,7 @@ export const programLoanInfo = [
       {
         location: "Phoenix",
         loanInfo: {
-          maxLoanAmt: 20480,
+          maxLoanAmt: 24980,
           loanTerm36: true,
           loanTerm60: true,
           "0": {
@@ -421,7 +391,7 @@ export const programLoanInfo = [
       {
         location: "Platte",
         loanInfo: {
-          maxLoanAmt: 20480,
+          maxLoanAmt: 24980,
           loanTerm36: true,
           loanTerm60: true,
           "0": {
@@ -435,7 +405,7 @@ export const programLoanInfo = [
       {
         location: "San Francisco",
         loanInfo: {
-          maxLoanAmt: 21980,
+          maxLoanAmt: 27980,
           loanTerm36: true,
           loanTerm60: true,
           "0": {
@@ -449,7 +419,7 @@ export const programLoanInfo = [
       {
         location: "Seattle",
         loanInfo: {
-          maxLoanAmt: 21980,
+          maxLoanAmt: 27980,
           loanTerm36: true,
           loanTerm60: true,
           "0": {
@@ -619,8 +589,7 @@ export const paymentTable = {
       col: "$12,000",
     },
     {
-      name:
-        "#2: Austin, Boulder, Golden Triangle, Los Angeles, Platte, Phoenix",
+      name: "#2: Austin, Boulder, Los Angeles, Platte, Phoenix",
       tuition: "$15,980",
       col: "$9,000",
     },
@@ -629,13 +598,12 @@ export const paymentTable = {
     {
       name: "#1: San Francisco, New York City, Seattle",
       tuition: "$15,980",
-      col: "$6,000",
+      col: "$12,000",
     },
     {
-      name:
-        "#2: Austin, Boulder, Golden Triangle, Los Angeles, Platte, Phoenix",
+      name: "#2: Austin, Boulder, Los Angeles, Platte, Phoenix",
       tuition: "$15,980",
-      col: "$4,500",
+      col: "$9,000",
     },
   ],
   show: true,
