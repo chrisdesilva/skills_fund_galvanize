@@ -46,8 +46,7 @@ export const schoolInfo = {
 export const faq = {
   // faq section
   costOfLiving: true, // true if at least one program has cost of living included
-  costOfLivingPrograms:
-    "Software Engineering Immersive and Data Science Immersive programs", // leave as empty string is cost of living availability is the same across all programs
+  costOfLivingPrograms: "", // leave as empty string is cost of living availability is the same across all programs
   multCostOfLivingPrograms: true, // true if costOfLivingPrograms string has more than one program
   interestOnly: true, // true if interest-only payments are an option
   immediateRepayment: false, // true if immediate repayment is an option
@@ -83,8 +82,8 @@ export const faq = {
     {
       programName: "Galvanize's Remote Data Science",
       maxAmount: "$17,980",
-      col: false,
-      colAmount: "$4,500",
+      col: true,
+      colAmount: "$9,000",
     },
   ],
 }
@@ -508,7 +507,7 @@ export const programLoanInfo = [
     url: "https://my.skills.fund/application?lenderCode=SKGALRE19",
     loanInfo: {
       // match loanInfo in first metro below
-      maxLoanAmt: 15980,
+      maxLoanAmt: 24980,
       loanTerm36: true,
       loanTerm60: true,
       "0": {
@@ -527,7 +526,7 @@ export const programLoanInfo = [
         location: "Metro A",
         loanInfo: {
           // match loanInfo to Program 3 loanInfo above
-          maxLoanAmt: 15980,
+          maxLoanAmt: 24980,
           loanTerm36: true,
           loanTerm60: true,
           "0": {
@@ -601,7 +600,7 @@ export const paymentTable = {
       col: "$12,000",
     },
     {
-      name: "#2: Austin, Boulder, Los Angeles, Platte, Phoenix",
+      name: "#2: Austin, Boulder, Los Angeles, Platte, Phoenix, Remote",
       tuition: "$15,980",
       col: "$9,000",
     },
