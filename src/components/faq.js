@@ -82,7 +82,7 @@ const FAQ = () => {
           enroll in Autopay with our payment processor, Launch Servicing. There
           are numerous benefits for enabling Autopay:
         </p>
-        <ul className="list-disc mb-0 pb-4">
+        <ul className="list-disc">
           <li>
             Save on interest. You will receive a .25% reduction in the interest
             rate on your loan as long as you remain signed up for Autopay, which
@@ -98,6 +98,12 @@ const FAQ = () => {
             ensures you don’t damage your credit if you miss a payment.
           </li>
         </ul>
+        <p className="mb-0 pb-4">
+          And remember, there are no restrictions on pre-payment, so in addition
+          to your automatic payments, you can also pay down your loan early
+          which will reduce the total amount of interest you will pay over the
+          life of the loan.
+        </p>
       </Collapse> */}
 
       {faq.costOfLiving && (

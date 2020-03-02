@@ -81,7 +81,7 @@ export const faq = {
     },
     {
       programName: "Galvanize's Remote Data Science",
-      maxAmount: "$17,980",
+      maxAmount: "$15,980",
       col: true,
       colAmount: "$9,000",
     },
