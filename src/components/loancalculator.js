@@ -227,6 +227,27 @@ const LoanCalculator = () => {
           Students may borrow from ${minLoanAmt} to $
           {loanInformation.maxLoanAmt}
         </p>
+        <p className="font-bold text-xs text-center lg:hidden mt-4">
+          Enroll in Autopay to reduce your interest rate. Learn more{" "}
+          <a
+            href="https://skills.fund/frequently-asked-questions/#autopay"
+            className="text-primary font-bold"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            here
+          </a>
+          .{" "}
+          <a
+            href="https://skills.fund/autopay-terms-and-conditions"
+            className="text-primary font-bold"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Terms and conditions
+          </a>{" "}
+          apply.
+        </p>
         {loanType === "0" && (
           <p className="text-xs text-center hidden lg:inline mb-2">
             Make interest-only payments while in the program. Two months after
@@ -290,16 +311,6 @@ const LoanCalculator = () => {
                     after completion, begin full payments.
                   </p>
                 )}
-                <p className="font-bold text-xs text-center lg:hidden mb-2">
-                  Enroll in Autopay to reduce your interest rate. Learn more{" "}
-                  <a
-                    href="https://skills.fund/frequently-asked.questions/#autopay"
-                    className="text-primary font-bold"
-                  >
-                    here
-                  </a>
-                  .
-                </p>
                 {loanType === "1" && (
                   <p className="text-xs text-center lg:hidden mb-2">
                     Start making full payments (interest + principal) about one
@@ -361,16 +372,6 @@ const LoanCalculator = () => {
                   Make interest-only payments while in the program. Two months
                   after completion, begin full payments.
                 </p>
-                {/* <p className="font-bold text-xs text-center lg:hidden">
-                  Enroll in Autopay to reduce your interest rate. Learn more{" "}
-                  <a
-                    href="https://skills.fund/frequently-asked.questions/#autopay"
-                    className="text-primary font-bold"
-                  >
-                    here
-                  </a>
-                  .
-                </p> */}
                 <p className="font-bold text-center my-4">Payments:</p>
                 <div className="flex justify-around">
                   {loanType === "0" && (
