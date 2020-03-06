@@ -236,8 +236,10 @@ const LoanCalculator = () => {
         <p className="font-bold text-xs text-center hidden lg:inline mb-2">
           Enroll in Autopay to reduce your interest rate. Learn more{" "}
           <a
-            href="https://skills.fund/frequently-asked.questions/#autopay"
+            href="https://skills.fund/frequently-asked-questions/#autopay"
             className="text-primary font-bold"
+            target="_blank"
+            rel="noreferrer noopener"
           >
             here
           </a>
@@ -245,6 +247,8 @@ const LoanCalculator = () => {
           <a
             href="https://skills.fund/autopay-terms-and-conditions"
             className="text-primary font-bold"
+            target="_blank"
+            rel="noreferrer noopener"
           >
             Terms and conditions
           </a>{" "}
