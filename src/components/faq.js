@@ -68,7 +68,7 @@ const FAQ = () => {
         )}
       </Collapse>
 
-      {/* <div onClick={() => showq2(!q2)}>
+      <div onClick={() => showq2(!q2)}>
         <h3 className="text-lg text-lg uppercase text-primary flex items-center cursor-pointer">
           <span className="text-sm">
             <FaAngleDown />
@@ -104,7 +104,7 @@ const FAQ = () => {
           which will reduce the total amount of interest you will pay over the
           life of the loan.
         </p>
-      </Collapse> */}
+      </Collapse>
 
       {faq.costOfLiving && (
         <>
