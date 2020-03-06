@@ -85,8 +85,7 @@ const FAQ = () => {
         <ul className="list-disc">
           <li>
             Save on interest. You will receive a .25% reduction in the interest
-            rate on your loan as long as you remain signed up for Autopay, which
-            adds up to a great savings over the life of your loan.{" "}
+            rate on your loan as long as you remain signed up for Autopay.{" "}
           </li>
           <li>
             Avoid late fees. With Autopay, your monthly loan payments are
@@ -94,8 +93,8 @@ const FAQ = () => {
             incurring late fees.{" "}
           </li>
           <li>
-            Protect your credit. By helping you make on-time payments, Autopay
-            ensures you don’t damage your credit if you miss a payment.
+            Protect your credit. By ensuring on-time payments, Autopay protects
+            your credit from missed payments.
           </li>
         </ul>
         <p className="mb-0 pb-4">
