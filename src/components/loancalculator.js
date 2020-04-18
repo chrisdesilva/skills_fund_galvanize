@@ -227,7 +227,7 @@ const LoanCalculator = () => {
           Students may borrow from ${minLoanAmt} to $
           {loanInformation.maxLoanAmt}
         </p>
-        <p className="font-bold text-xs text-center lg:hidden mt-4">
+        <p className="font-bold text-xs text-center my-4">
           Enroll in Autopay to reduce your interest rate. Learn more{" "}
           <a
             href="https://skills.fund/frequently-asked-questions/#autopay"
