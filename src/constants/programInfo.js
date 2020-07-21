@@ -135,16 +135,22 @@ export const faq = {
       programName: "Galvanize's Software Engineering Immersive",
       maxAmount: "$15,980",
       col: true,
-      colAmount: "$12,000",
+      colAmount: "$12,000, depending on your metro,",
     },
     {
       programName: "Galvanize's Data Science Immersive",
       maxAmount: "$15,980",
       col: true,
-      colAmount: "$12,000",
+      colAmount: "$12,000, depending on your metro,",
     },
     {
       programName: "Galvanize's Remote Data Science",
+      maxAmount: "$15,980",
+      col: true,
+      colAmount: "$9,000",
+    },
+    {
+      programName: "Galvanize's Remote Data Science - Part-Time",
       maxAmount: "$15,980",
       col: true,
       colAmount: "$9,000",
@@ -572,6 +578,78 @@ export const programLoanInfo = [
   {
     name: "Remote Data Science Immersive",
     url: "https://my.skills.fund/application?lenderCode=SKGALRE19",
+    loanInfo: {
+      // match loanInfo in first metro below
+      maxLoanAmt: 24980,
+      loanTerm36: true,
+      loanTerm60: true,
+      "Interest Only": {
+        k: 6,
+        apr36: 11.59,
+        apr60: 12.84,
+      },
+      "Immediate Repayment": null,
+    },
+    defaultLoanType: "Interest Only", // leave at 0 for interest-only, set to 1 for immediate repayment
+    showMetros: false,
+    showLoanTypes: false,
+    loanTypes: ["Interest Only"],
+    locations: ["Metro A", "Metro B", "Metro C"],
+    metros: [
+      {
+        location: "Metro A",
+        loanInfo: {
+          // match loanInfo to Program 3 loanInfo above
+          maxLoanAmt: 24980,
+          loanTerm36: true,
+          loanTerm60: true,
+          "Interest Only": {
+            k: 6,
+            apr36: 11.59,
+            apr60: 12.84,
+          },
+          "Immediate Repayment": null,
+        },
+      },
+      {
+        location: "Metro B",
+        loanInfo: {
+          maxLoanAmt: 15545,
+          loanTerm36: true,
+          loanTerm60: true,
+          "Interest Only": {
+            k: 6,
+            apr36: 11.59,
+            apr60: 12.84,
+          },
+          "Immediate Repayment": {
+            apr36: 11.25,
+            apr60: 12.55,
+          },
+        },
+      },
+      {
+        location: "Metro C",
+        loanInfo: {
+          maxLoanAmt: 20545,
+          loanTerm36: true,
+          loanTerm60: true,
+          "Interest Only": {
+            k: 6,
+            apr36: 11.59,
+            apr60: 12.84,
+          },
+          "Immediate Repayment": {
+            apr36: 11.25,
+            apr60: 12.55,
+          },
+        },
+      },
+    ],
+  },
+  {
+    name: "Remote Data Science Part-Time",
+    url: "https://my.skills.fund/application?lenderCode=SKGRDSPT20",
     loanInfo: {
       // match loanInfo in first metro below
       maxLoanAmt: 24980,
